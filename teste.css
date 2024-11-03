@@ -1,0 +1,366 @@
+body{
+    margin: 0%;
+    background-color: #daf1fcc4;
+    font-family: 'lora', serif;
+    transition: background-color 0.5s ease color 0.5s ease;
+}
+
+button{
+    padding: 0%;
+}
+
+body.dark-mode {
+    background-color: #04223a;
+    color: #ffffff;
+}
+
+body.dark-mode .toggle-btn{
+    background-color: #04223a;
+}
+
+body.dark-mode #quartoTitulo{
+    color: #00bfff;
+}
+
+.toggle-btn{
+    margin-left: 20px;
+    padding: 0%;
+    cursor: pointer;
+    border: none;
+    height: 38px;
+    background-color: #daf1fcc4;
+}
+
+nav{
+    background-color: #daf1fcc4;
+    padding: 1px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+body.dark-mode li a{
+    color: #ffffff;
+}
+
+body.dark-mode .informacoesDeContato{
+    color: #fff;
+}
+
+body.dark-mode nav {
+    background-color: #04223a; 
+}
+
+body.dark-mode #rodape {
+    background: linear-gradient(to left, #050b64, #304755); 
+}
+
+body.dark-mode #banner {
+    background: linear-gradient(to left, #050b64, #304755); 
+}
+
+body.dark-mode #tituloPrincipal {
+    color: #00bfff;
+}
+
+body.dark-mode #quintoTitulo {
+    color: #00bfff;
+}
+
+body.dark-mode #terceiroTitulo {
+    color: #00bfff;
+}
+
+body.dark-mode #segundoTitulo {
+    color: #00bfff;
+}
+
+body.dark-mode #corpoDoTexto{
+    color: #fff;
+}
+
+.menu{
+    margin-left: 0%;
+    margin-right: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+.menu li{
+    margin: 0 20px;
+}
+
+.menu li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover{
+    color: #1100ff;
+}
+
+.menu li a::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #00bfff;
+    transition: width 0.3s ease;
+}
+
+.menu li a:hover::before{
+    width: 100%;
+}
+
+.menu li a::after{
+    content: '';
+    background: url('celtic-knot.svg') no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menu li a:hover::after{
+    opacity: 1;
+}
+
+#centralizar{
+    transition: transform .2s;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border: #0b2a33c4 2px solid;
+    border-radius: 50%;
+    width: 40%;
+    margin-top: 12%;
+    background-color: #083d689d;
+}
+
+#centralizar:hover{
+    transform: scale(1.5);
+}
+
+#centralizar a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contatosRapidos{
+    font-size: 15px;
+    padding: 30px;
+    margin-left: 15%;
+    margin-right: 9%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#tituloPrincipal{
+    margin-left: 16%;
+    color: #0b2a33c4;
+    font-size: 52px;
+}
+
+#corpoDoTexto{
+    margin-left: 16%;
+    color: #000000;
+}
+
+#banner{
+    background: linear-gradient(to left, #083d68, #daf1fcc4);
+    padding: 5%;
+}
+
+.imagemDePerfil{
+    float: right;
+    border: #0b2a33c4 2px solid;
+    margin-right: 25%;
+    border-radius: 20%;
+}
+
+#segundoTitulo{
+    margin-left: 16%;
+    color: #0b2a33c4;
+    font-size: 52px;
+}
+
+#terceiroTitulo{
+    margin-left: 16%;
+    color: #0b2a33c4;
+    font-size: 52px;
+}
+
+#quartoTitulo{
+    margin-left: 16%;
+    color: #0b2a33c4;
+    font-size: 52px;
+}
+
+#quintoTitulo{
+    margin-left: 16%;
+    color: #0b2a33c4;
+    font-size: 52px;
+}
+
+#imagens{
+    margin-left: 16%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.site{
+    border-radius: 10%;
+    border: #0b2a33c4 2px solid;
+}
+
+#label{
+    font-weight: bold;
+    color: #0b2a33c4;
+    font-size: 22px;
+    margin-left: 16%;
+}
+
+#nome{
+    border: #0b2a33c4 1px solid;
+    padding: 2px;
+    width: 26%;
+    height: 30px;
+    margin-left: 16%;
+}
+
+#email{
+    border: #0b2a33c4 1px solid;
+    padding: 2px;
+    width: 26%;
+    height: 30px;
+    margin-left: 16%;
+}
+
+#telefone{
+    border: #0b2a33c4 1px solid;
+    padding: 2px;
+    width: 26%;
+    height: 30px;
+    margin-left: 16%;
+}
+
+#mensagem{
+    border: #0b2a33c4 1px solid;
+    padding: 2px;
+    width: 26%;
+    height: 80px;
+    margin-left: 16%;
+}
+
+body.dark-mode #submit{
+    background-color: #185669c4;
+    color: #fff;
+    padding: 15px;
+    font-size:15px;
+    border: #000000 2px solid;
+    margin-left: 16%;
+}
+
+body.dark-mode #reset{
+    background-color: #185669c4;
+    color: #fff;
+    padding: 15px;
+    font-size:15px;
+    border: #000000 2px solid;
+    margin-left: 16%;
+}
+
+#submit{
+    background-color: #0b2a33c4;
+    padding: 15px;
+    font-size: 15px;
+    border: #000000 2px solid;
+    margin-left: 16%;
+}
+
+#reset{
+    background-color: #0b2a33c4;
+    padding: 15px;
+    font-size: 15px;
+    border: #000000 2px solid;
+    margin-left: 16%;
+}
+
+.containerSobreMim{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#rodape{
+    background: linear-gradient(to left, #083d68, #daf1fcc4);
+    padding: 25px;
+}
+
+.informacoesDeContato{
+    margin-left: 16%;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.informacoesDeContato a{
+    text-decoration: none;
+    color: #0a0944;
+}
+
+@media (max-width: 700px) {
+    #rodape{
+        background: linear-gradient(to left, #083d68, #daf1fcc4);
+        padding: 25px;
+    }
+
+    nav{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contatosRapidos{
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .containerSobreMim{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    #corpoDoTexto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #segundoTitulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #terceiroTitulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
